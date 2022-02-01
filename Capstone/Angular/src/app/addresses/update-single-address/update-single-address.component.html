@@ -1,0 +1,68 @@
+<body>
+  <hr>
+  <div class="container form-container">
+    <div class="col-md-4">
+      <h3 class="text-center common-font form-heading">Update The Existing Address</h3>
+      
+        <div class="form-group">
+          <label class="common-font" for="flatName">Flat number: </label>
+          <input [(ngModel)]="address.flatNumber" type="number" placeholder=""
+            class="form-control input-field common-font" id="addressFlatNumber" name="addressFlatNumber">
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="buildingName">Building name: </label>
+          <input [(ngModel)]="address.buildingName" type="text" placeholder=""
+            class="form-control input-field common-font" id="addressBuildingName" name="addressBuildingName">
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="landmark">Landmark: </label>
+          <input [(ngModel)]="address.landMark" type="text" placeholder="  "
+            class="form-control input-field common-font" id="addressBuildingName" name="addressBuildingName">
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="city">City: </label>
+          <input [(ngModel)]="address.city" type="text" placeholder="" class="form-control input-field common-font"
+            id="addressBuildingName" name="addressFlatName">
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="city">District: </label>
+          <input [(ngModel)]="address.district" type="text" placeholder="" class="form-control input-field common-font"
+            id="addressBuildingName" name="addressFlatName">
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="city">State: </label>
+          <input [(ngModel)]="address.state" type="text" placeholder="" class="form-control input-field common-font"
+            id="addressBuildingName" name="addressFlatName">
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="country">Country: </label>
+          <input [(ngModel)]="address.country" type="text" placeholder="  "
+            class="form-control input-field common-font" id="addressBuildingName" name="addressBuildingName">
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="city">PIN Code: </label>
+          <input [(ngModel)]="address.pinCode" type="number" placeholder="" class="form-control input-field common-font"
+            id="addressBuildingName" name="addressFlatName">
+        </div>
+
+
+        <div class="align-self-center mx-auto common-font">
+          <button class="btn btn-success common-font" (click)="updateExistingAddress()">Update</button>
+        </div>
+    </div>
+  </div>
+</body>

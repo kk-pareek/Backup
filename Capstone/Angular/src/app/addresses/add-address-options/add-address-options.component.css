@@ -1,0 +1,38 @@
+img {
+  width: 450px;
+  height: 335px;
+  margin-top: 20px;
+}
+
+.card {
+  margin-top: 20px;
+  align-items: center;
+  background-color: var(--light-background);
+  border: solid 1px var(--base-color-level-one);
+}
+
+body{
+  background: var(--light-background);
+}
+ 
+.container {
+  align-items: center;
+  margin-top: 8vh;
+}
+
+.btn {
+  width: 500px;
+  height: 50px;
+}
+
+.multiple-address-button {
+  margin-bottom: 30px;
+}
+
+.single-address-button {
+  margin-top: 15px;
+}
+
+.card-title {
+  margin-top: 15px;
+}

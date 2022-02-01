@@ -1,0 +1,90 @@
+<body ng-app="validationApp" ng-controller="mainController">
+  <hr>
+  <div class="container form-container">
+    <div class="col-md-4">
+      <h3 class="text-center common-font form-heading">Add New Address</h3>
+
+      <form class="" (ngSubmit)="addNewAddress()" #f="ngForm">
+
+        <div class="form-group">
+          <label class="common-font" for="flatName">Flat number: </label>
+          <input [(ngModel)]="address.flatNumber" type="Number" placeholder="Enter your Flat number " OnlyNumber="true"
+            class="form-control input-field common-font" id="addressFlatNumber" name="addressFlatNumber" required
+            #flatNum="ngModel">
+          <span class="conSpan" *ngIf="!flatNum.valid &&flatNum.touched">Flat number can't be empty.</span>
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="buildingName">Building name: </label>
+          <input [(ngModel)]="address.buildingName" style="text-transform: capitalize;" type="text"
+            placeholder="Enter your Building/Locality  " class="form-control input-field common-font"
+            id="addressBuildingName" name="addressBuildingName" required #buildingName="ngModel">
+          <span class="conSpan" *ngIf="!buildingName.valid &&buildingName.touched">Building/locality can't be empty.</span>
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="landmark">Landmark: </label>
+          <input [(ngModel)]="address.landMark" style="text-transform: capitalize;" type="text"
+            placeholder="Enter the landMark  " class="form-control input-field common-font" id="addressLandMark"
+            name="landmark">
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="city">City: </label>
+          <input [(ngModel)]="address.city" style="text-transform: capitalize;" type="text"
+            placeholder="Enter your City  " class="form-control input-field common-font" id="addressCity"
+            name="city" required #city="ngModel">
+          <span class="conSpan" *ngIf="!city.valid && city.touched">City can't be empty.</span>
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="pin">PIN Code: </label>
+          <input [(ngModel)]="address.pinCode" type="number" placeholder="Enter your Pincode "
+            class="form-control input-field common-font" id="addressPincode" name="pincode" required
+            #pin="ngModel" minlength="6" maxlength="6"> 
+          <span class="conSpan" *ngIf="!pin.valid && pin.touched ">Pincode can't be empty.</span>
+          <!-- <button class="btn btn-success common-font" (click)="checkForPincode()">Check for Pincode</button> -->
+          <div *ngIf="validateData">
+            <span class="conSpan" *ngIf="isPinValid()">Please enter a valid pincode.</span>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="district">District: </label>
+          <input [(ngModel)]="address.district" style="text-transform: capitalize;" type="text"
+            placeholder="Enter your District  " class="form-control input-field common-font" id="addressDistrict"
+            name="district" required #district="ngModel" disabled>
+          <span class="conSpan" *ngIf="!district.valid && district.touched"></span>
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="state">State: </label>
+          <input [(ngModel)]="address.state" style="text-transform: capitalize;" type="text"
+            placeholder="Enter your State  " class="form-control input-field common-font" id="addressState"
+            name="state" required #state="ngModel" disabled>
+          <span class="conSpan" *ngIf="!state.valid && state.touched"></span>
+        </div>
+
+
+        <div class="form-group">
+          <label class="common-font" for="country">Country: </label>
+          <input [(ngModel)]="address.country" style="text-transform: capitalize;" type="text"
+            placeholder="Enter your Country  " class="form-control input-field common-font" id="addressCountry"
+            name="country" disabled>
+        </div>
+
+
+        <div class="align-self-center mx-auto common-font">
+          <button class="btn btn-success common-font" [disabled]="!f.valid">Add</button>
+        </div>
+        
+      </form>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,29 @@
+<body>
+  <h4 class="text-center">Upload File For Adding Multiple Addresses</h4>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="file-upload-container">
+              <div class="row">
+                <div class="col-8">
+                  <label class="btn btn-secondary p-0">
+                    <input type="file" (change)="selectFile($event)" />
+                  </label>
+                </div>
+                <div class="col-4">
+                  <button class="btn btn-success btn-sm" [disabled]="!selectedFiles" (click)="uploadAddressesFile()">
+                    Upload file
+                  </button>
+                </div>
+              </div>
+              <div *ngIf="message" class="alert alert-success" role="alert">{{ message }}</div>
+              <div *ngIf="errorMsg" class="alert alert-danger" role="alert">{{ errorMsg }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

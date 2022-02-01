@@ -1,0 +1,39 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: var(--light-background);
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.container {
+  margin: 50px;
+
+  
+  /* margin-left: 7%; */
+}
+
+.file-upload-container {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card {
+  /* margin-top: 20px; */
+  align-items: center;
+  background-color: var(--light-background);
+  border: solid 1px var(--base-color-level-one);
+
+}
+
+.btn-secondary {
+  margin-right: 15px;
+}
+
+h4 {
+  margin-top: 30px;
+}

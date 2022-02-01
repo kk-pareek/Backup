@@ -1,0 +1,31 @@
+.welcome-message {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.common-font {
+  font-family: 'Domine', serif;
+}
+
+.img-fluid {
+  width: 50vw;
+  height: 60vh;
+  margin: 20px;
+  transition: 1s all ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.01);
+  transition: 1s all ease;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: var(--light-background);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

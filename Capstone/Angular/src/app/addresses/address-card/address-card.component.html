@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Address</h5>
+      <h6 class="card-subtitle mb-2 text-muted">which you just searched for!</h6>
+      <p class="card-text">{{theAddress.flatNumber}}, {{theAddress.buildingName}}, {{theAddress.city}}, {{theAddress.state}}, {{theAddress.pinCode}} </p>
+      <a routerLink="update-single-address" (click)="updateAddress()" class="card-link">Update</a>
+      <a href="javascript:void(0);" (click)="deleteAddress()" class="card-link">Delete</a>
+    </div>
+  </div>
+</div>
+
+

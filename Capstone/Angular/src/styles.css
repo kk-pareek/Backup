@@ -1,0 +1,22 @@
+/* You can add global familys to this file, and also import other family files */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+:root {
+  --light-background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+
+  --base-color-level-one: #161853;
+  --base-color-level-two: #292C6D;
+  --base-color-level-three: #FAEDF0;
+  --base-color-level-four: #EC255A;
+
+  --font-color-level-one: #EC255A;
+  --font-color-level-two: #FAEDF0;
+  --font-color-level-three: #292C6D;
+  --font-color-level-four: #161853;
+
+  --font-family-level-one: 'Fira Sans Condensed', sans-serif;
+  --font-family-level-two: 'Lato', sans-serif;
+  --font-family-level-three:
+  --font-family-level-four:
+}

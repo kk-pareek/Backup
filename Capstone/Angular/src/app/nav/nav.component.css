@@ -1,0 +1,32 @@
+nav {
+  background-color: var(--base-color-level-two);
+}
+
+.font-color {
+  color: var(--font-color-level-two);
+  font-weight: 600;
+}
+.nav-item {
+  transition: 1s all ease;
+  margin: 7px;
+}
+
+.nav-item:hover {
+  background-color: var(--base-color-level-three);
+  border-radius: 100%;
+  transform: scale(1.1);
+  /* margin-left: 7px;
+  margin-right: 7px; */
+  transition: 0.8s all ease;
+}
+.nav-item:hover .font-color {
+  color: var(--base-color-level-two);
+}
+.navbar-brand {
+  transition: 0.2s all ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+  transition: 0.5s all ease;
+}

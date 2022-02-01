@@ -1,0 +1,26 @@
+<body>
+  <h3 class="text-center search-addresses-text">Search Addresses</h3>
+  <div class="container">
+    <div style="text-align:center">
+      <span class="search-bar-container">
+        <p-autoComplete [(ngModel)]="keyword" [suggestions]="filteredAddress"
+          field="groupName"
+          [style]="{'width':'50%'}" [inputStyle]="{'width':'100%'}"
+          (completeMethod)="searchOnConsole($event)">
+       
+          <ng-template let-theAdd pTemplate="item" >
+            <div class="list-group">
+              <a (click)="handleAddressCardRender(theAdd)" routerLink="address-card" class="list-group-item list-group-item-action"> {{theAdd.flatNumber}},{{theAdd.buildingName}},{{theAdd.city}},{{theAdd.district}},{{theAdd.state}},{{theAdd.pinCode}} </a>
+            </div>
+          </ng-template>
+      
+        </p-autoComplete>
+        <div *ngIf = "renderAddressCard" class="address-card">
+          <app-address-card [theAddress] = "theAddressVariableToBeUsedForRenderingAddressCard"></app-address-card>
+        </div>
+      </span>
+    </div>
+  </div>
+</body>
+
+

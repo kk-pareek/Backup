@@ -1,0 +1,31 @@
+#addAddressContainer {
+  margin: 10px;
+  padding: 10px;
+}
+
+.input-group {
+  width: 50vw;
+  margin: 10px;
+  padding: 10px;
+}
+
+
+body{
+	margin: 0;
+	padding: 0;
+	background: var(--light-background);
+	height: 100vh;
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+
+.addAddressButton{
+	display: flex;
+}
+.addAddressButton{
+	margin-bottom: 15px;
+}
+.viewAllAddressesButton {
+	margin-top: 15px;
+  }
